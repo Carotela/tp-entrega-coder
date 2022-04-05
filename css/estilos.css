@@ -1,0 +1,938 @@
+*{
+margin:0;
+padding:0;
+font-family: 'Nunito', sans-serif;
+/*font-family: 'Truculenta', sans-serif;*/
+box-sizing: border-box;
+    }
+
+.border{
+    border: 2px solid black;
+    }
+
+.logo img{
+    width:100px;
+    height: 100px;
+    
+    }
+
+.container-grid{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "section"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 132px auto auto auto;
+
+    }
+
+.header{
+    grid-area: header;
+    background-color: #673398;
+    }
+
+.main-home{
+    grid-area: main;
+    background-color: #fff;
+    }
+
+.testimonios{
+    grid-area: section;
+    background-color: #fff;
+    }
+
+#footer{
+    grid-area: footer;
+    background-color: #673398;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 16px;
+    margin-top: 16px;
+    }
+
+/*HEADE*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 24px;
+   
+    }
+
+.nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+.nav-bar ul{
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.nav-bar ul li{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    }
+
+.nav-bar ul li a{
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    padding: 16px;
+    }
+
+.nav-bar a:hover{
+    line-height: 2px;
+    color:#FFCC01;
+    font-weight: 500;
+    }
+
+/*FIN DE HEADER*/
+
+/*FOOTER*/
+.icono{
+    text-decoration: none;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    }
+
+.contactos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    }
+
+.contactos-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    }
+
+.contactos a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px;
+    
+    }
+
+.icono img{
+    width: 25px;
+    height: 25px;
+   
+    }
+
+.logo-foo img{
+    width:120px;
+    height: 120px;
+    }
+
+h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 5rem;
+    font-weight: 500;
+    color: #FF3366;
+    }
+
+h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+    color: #FF3366;
+    text-align: center;
+    }
+
+h3{
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    color: #FF3366;
+    
+    }
+
+h4{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    color: #663399;
+    }
+
+h5{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
+    }
+/*FIN DE FOOTER*/
+
+/*MAIN*/
+/*banner-area*/
+.banner{
+    width: 100%;
+    height: 667px;
+    position: relative;
+    background-image:url(../assets/img/banner-home.jpg);
+    background-size: 120%;
+    animation: movimiento  10s infinite linear alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+@keyframes movimiento{
+
+    fron{
+        background-position: bottom left;
+        background-position: top left;
+    } 
+    to{
+        background-position: top right;
+    }
+    
+    }
+ 
+.container-tex{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    
+    }
+
+.tex-banner{
+    color:#FFF;
+    font-size: 3.5rem;
+    padding: 8px;
+    font-weight: 600;
+    margin: auto;
+    }
+
+.bajada-banner{
+    font-size: 2.5rem;
+    color:#FFF;
+    padding: 8px 0;
+   
+    }
+
+.tex{
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    color: #fff;
+    margin-bottom: 8px 0;
+    }
+
+.tex button{
+    background: #663399;
+    transition: all .3s ease;
+    padding: 16px 100px;
+    margin-left: 8px;
+    font-size: 16px;
+    border-style: none;
+    margin-top:16px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    border-radius: 16px;
+    }
+
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.tex button:hover{
+    background: #FF3366;
+    }
+
+/*banner-area-fin*/
+
+/*quienes somos*/
+
+.quienes{
+    margin: 16px 128px 16px 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow:0 0 10px 0 #cacaca;
+    padding: 8px;
+    
+    }
+
+.quiene-somos{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    
+    }
+/*fin quienes somos*/
+
+/*fin que ofrecemos*/
+.contenedor-ofrecemos{
+    margin: 16px 128px 16px 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    }
+
+.contenedor-card-2{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+   
+    }
+
+.contenedor-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 265px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow:0 0 10px 0 #cacaca;
+    transition: 0.2s;
+    }
+
+.iconos-personalizados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+    
+    }
+
+.bajada-card-ofrecemos h4{
+   font-family: 'Nunito', sans-serif;
+   font-weight: 500;
+    font-size: 1.7rem;
+    color: #FF3366; 
+   text-align: center;
+    }
+
+.bajada{
+    font-size: 1.2rem;
+    text-align: center;
+    }
+
+.sub-titulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    margin: 24px;
+    font-size: 3rem;
+    }
+
+.contenedor-card:hover{
+    width: 265px;
+    background-color: rgba(255, 204, 1, 1);
+    }
+/*fin que ofrecemos*/
+
+/*inicio andan diciendo*/
+
+.testimonios{
+    margin: 16px 128px 16px 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    
+    }
+
+.contenedor-tes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    }
+
+.contenedor-testimonio{
+   padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 355px;
+    background-color: #663399;
+    border-radius: 16px;
+    transition: all 500ms ease;
+    margin: 16px 0px;
+    }
+
+.alumnos img{
+    width: 355px;
+    height: auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+        
+    }
+
+.textos-alumnos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    }
+
+.n-alumnos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    }
+
+.testimonio1{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 16px;
+    text-align: left;
+    font-size: 1.3rem;
+    }
+
+.contenedor-testimonio:hover{
+    transform: scale(1.1);
+    background-color:#FF3366; 
+    }
+/*fin andan diciendo*/
+/*FIN DE HOME*/
+
+/*INICIA STAFF*/
+/*banner-staff*/
+/*fin de banner staff*/
+.banner-staff{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    display: table;
+    overflow: hidden;
+    }
+
+
+.fundador{
+    margin: 16px 128px 16px 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 16px;
+    box-shadow:0 0 10px 0 #cacaca;
+    height: auto;
+    background-color: #663399;
+    
+    }
+
+.contenedor-f {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 24px;
+    color: #fff;
+   
+    }
+
+.contenedor-f h4 {
+   
+    color: #fff;
+    font-weight: 500;
+   
+    }
+
+.img-fundador {
+    height: 430px;
+   
+    }
+
+.sub-titulo-b {
+    color:#fff;
+    font-size: 3rem;
+    font-weight: 600;
+    }
+
+.img-fundador img{
+    height: 430px;
+    border-top-left-radius:16px; 
+    border-bottom-left-radius: 16px ;
+    background: cover;
+
+    }
+
+.titulo-f{ 
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    
+    }
+
+.staff-equipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    background-color: #fff;
+    width: 100%;
+    
+    }
+
+.area-staff{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    }
+
+.card-staf{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow:0 0 10px 0 #cacaca;
+    border-radius: 16px;
+    transition: 0.2s;
+    background-color: #fff;
+    margin: 16px 8px;
+    height:auto;
+    }
+
+.img-staff{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 8px;
+    
+    }
+
+.img-staff img{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    }
+
+.textos-staff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    }
+
+.titulo-staff{
+    text-align: center;
+    }
+
+.bajada-staff{
+    font-size: 1.2rem;
+    }
+
+.parallax {
+  background-image: url("../assets/img/textura2.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+
+/*CURSOS DE ESPAÑOL*/
+/*banner-area*/
+.banner-es{
+    width: 100%;
+    height: 667px;
+    position: relative;
+    background-image:url(../assets/img/curso-de-espanol.png);
+    background-size: 120%;
+    animation: movimiento  10s infinite linear alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    }
+
+@keyframes movimiento{
+    fron{
+        background-position: bottom left;
+        background-position: top left;
+    } 
+    to{
+        background-position: top right;
+    }
+    
+}
+ 
+.curso-es{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  #663399;
+    box-shadow:0 0 10px 0 #cacaca;
+    margin-bottom: 16px;
+    }
+
+.curso-es h1{
+    color:#fff;
+    font-family: 'Truculenta', sans-serif;
+    }
+
+/*banner-area-fin*/
+/*card curso de español*/
+.card-es-container{
+    margin: 16px 128px 16px 128px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow:0 0 10px 0 #cacaca;
+    
+    }
+
+.area-card-es{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+.titulo-card-es{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    }
+
+.titulo-card-es h2{
+    color: #663399;
+    
+    }
+
+.tex-s{
+    color: #663399;
+    margin-right: 16px;
+    
+    }
+
+.card-es{
+   font-size: 1.5rem; 
+    }
+
+.footer-card-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    }
+
+span {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 16px;
+    padding: 8px;
+    
+    }
+
+.icon-tex{
+    color: black;
+    font-size: 20px;
+}
+
+.button{
+     padding: 16px 50px;
+    margin-left: 8px;
+    font-size: 16px;
+    background: none;
+    border-style: no;
+    border: 3px solid #FF3366;
+    color: #fff;
+    margin-top:16px;
+    transition: background 500ms;
+    cursor: pointer;
+    }
+.button a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF3366;
+    }
+
+.button:hover{
+    background:#663399; 
+    }
+
+.parallax-es {
+  background-image: url("../assets/img/textura-3.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+
+/*fin curso de español*/
+
+/*OTROS CURSOS*/
+.banner-otros{
+    width: 100%;
+    height: 667px;
+    position: relative;
+    background-image:url(../assets/img/otros-cursos.png);
+    background-size: 120%;
+    animation: movimiento  10s infinite linear alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    }
+
+@keyframes movimiento{
+    fron{
+        background-position: bottom left;
+        background-position: top left;
+    } 
+    to{
+        background-position: top right;
+    }
+    
+}
+ 
+.curso-otros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  #663399;
+    box-shadow:0 0 10px 0 #cacaca;
+    margin-bottom: 16px;
+    }
+
+.curso-otros h1{
+    color:#fff;
+    font-family: 'Truculenta', sans-serif;
+    }
+
+/*FIN DE OTROS CURSOS*/
+
+/*INICIO DE FORMULARIO*/
+form{
+    margin: auto;
+    max-width: 1000px;
+    padding: 32px;
+    margin-top: 24px;
+    border-radius: 16px;
+    box-shadow:0 0 10px 0 #cacaca;
+    box-sizing: border-box;
+        }
+
+.intro-f{
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 24px;
+    }
+
+input, textarea{
+    font-size: 24px;
+    color:#663399;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #FF3366;
+    outline: none;
+    padding: 16px;
+    }
+
+textarea{
+    min-height: 140px;
+    max-height: 200px;
+    max-width: 100%;
+    margin-bottom: 16px;
+    
+}
+
+#boton{
+    background: rgba(147, 70, 150, 1);
+    border-radius:16px;
+    color:#fff;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    padding: 16px;
+    border:none;
+    margin-top: 100px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    }
+
+#boton:hover{
+    cursor: pointer;
+    background: #663399;
+    
+    }
+
+.info-f{
+    text-align: justify-all;
+}
+
+.img-fluid {
+    max-width: 100%;;
+}
+/*FIN DE FORMULARIO*/
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width:768px) {
+    
+    body{
+        background: black;
+    }
+    .container-grid{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "section"
+        "footer";
+        
+             }
+    .header{
+        grid-area: header;
+        width: 100%;
+    }
+    
+    .main-home{
+        grid-area: main;
+        width: 100%;
+    }
+    
+    .testimonios{
+        grid-area: section;
+        width: 100%;
+    }
+    
+    #footer{
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 16px;
+    width: 100%;    
+   
+    }
+    
+    /*banner-area*/
+    .banner{
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-size: 200%;
+        animation: movimiento  10s infinite linear alternate;
+        background-repeat: no-repeat;
+        
+        }
+
+    @keyframes movimiento{
+
+        fron{
+            background-position: bottom left;
+            background-position: top left;
+        } 
+        to{
+            background-position: top right;
+        }
+
+        }
+
+    
+             
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    .body {
+            background-color: #000000;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

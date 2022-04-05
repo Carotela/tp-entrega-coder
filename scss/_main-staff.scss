@@ -1,0 +1,474 @@
+/*INICIA STAFF*/
+/*banner-staff*/
+/*fin de banner staff*/
+.banner-staff{
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    display: table;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 426px;
+    background-color: $mivioleta;
+    }
+    .staff-staff{
+    	background-color: $mivioleta;
+    	width: 100%;
+    	margin: 0;
+    	width: 100%;
+    	h1{
+    		font-size: $titulos;
+    		font-family: $truculenta;
+    		color: $blanco;
+    	}
+    }
+//FUNDADOR-CARD//
+    .fundador{
+    	border-radius: 16px;
+    	box-shadows:$box-shadows;
+    	height: 426px;
+    	background: $mivioleta;
+    	
+    	.img-fundador{
+    					display: map-get($display-center,display);
+    					align-items: map-get($display-center,align-items);
+					    
+					    	 img{
+					    	 	height: 426px;
+					    	 	border-top-left-radius:16px; 
+							    border-bottom-left-radius: 16px ;
+							    background-size:  cover;
+
+					    	 	}
+    					}
+    	.contenedor-f{
+    		display: map-get($display-center,display);
+    		align-items: map-get($display-center,align-items);
+    		justify-content: flex-end;
+    		margin-left: 24px;
+    		margin-right:48px;
+        	color: $blanco;
+        	height: 426px;
+    		.contenedor-texto-f{
+    			font-family: $nunito;
+
+
+    			.titulo-f{
+    						display: map-get($display-center,display);
+						    justify-content: map-get($display-center,justify-content);
+						    align-items:flex-start;
+						    flex-direction: column;}
+						    flex-wrap: wrap;
+						    
+						    h4{
+						    	font-size: $h4;
+						    	font-weight: 200;
+						    	margin: 8px 16px;
+						    }
+						    h2{
+						    	margin: 8px 16px;
+						    	font-size: $h2;
+						    	font-weight: 400;
+						    }
+    			.quiene-somos{
+    			margin: 8px 16px;	
+    			flex-wrap: wrap; 
+                font-family: $nunito;
+                font-size: 1.5rem;
+                font-weight: 200;
+    			}
+    		}
+    	}
+    }
+
+//staff´presentacion//
+.staff-equipo{
+	flex-direction: row;
+    height: auto;
+    background-color: #fff;
+    
+	.area-staff{
+		display: map-get($display-center,display);
+		justify-content: map-get($display-center,justify-content);
+		align-items: map-get($display-center,align-items);
+		width: 100%;
+    	flex-wrap: wrap;
+		.card-staf{
+			display: map-get($display-center,display);
+			justify-content: map-get($display-center,justify-content);
+			align-items: map-get($display-center,align-items);
+			width: 320px;
+			flex-direction: column;
+			box-shadow:$box-shadows;
+			height: 595px;
+			margin:20px;
+			border-radius:$radius;
+
+			.img-staff{
+			isplay: map-get($display-center,display);
+			justify-content: map-get($display-center,justify-content);
+			align-items: map-get($display-center,align-items);
+    		width: 100%;
+    		padding: 8px;
+				img{
+					display: map-get($display-center,display);
+					justify-content: map-get($display-center,justify-content);
+					align-items: map-get($display-center,align-items);
+				    width: 100%;
+				    height: auto;
+				    border-top-left-radius: 8px;
+				    border-top-left-radius: 8px;
+				}
+			}
+			.textos-staff{
+				display: map-get($display-center,display);
+				justify-content: map-get($display-center,justify-content);
+				align-items: map-get($display-center,align-items);
+				flex-direction: column;
+				font-family: $nunito;
+				padding: 8px;
+				.titulo-staff{
+					 text-align: center;
+					 font-size: $h4;
+					 color:$mivioleta;
+					 margin:0;
+					 padding: 8px;
+					 font-weight: 400;
+
+				}
+				.bajada-staff{
+					font-size: 1.2rem;
+
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+ 	.banner-staff{
+ 		height: auto;
+ 		width: 100%;
+        }
+    .staff-staff{
+    	display: map-get($display-center,display);
+		justify-content: map-get($display-center,justify-content);
+		align-items: map-get($display-center,align-items);
+    	background-color: $mivioleta;
+    	width: 100%;
+    	margin: 0;
+    	width: 100%;
+    	h1{
+    		font-size: $h3;
+    		font-family: $truculenta;
+    		color: $blanco;
+    		text-align: center;
+    		padding: 8px;
+    	}
+    }
+
+    //FUNDADOR-CARD//
+    .fundador{
+    	border-radius: 8px;
+    	box-shadows: $shadows;
+    	height: auto;
+    	background: $mivioleta;
+    	flex-direction: column;
+    	flex-wrap: wrap;
+    	width: 100%;
+    	margin: 8px 0;
+    	
+
+    	.img-fundador{
+    					display: map-get($display-center,display);
+						justify-content: map-get($display-center,justify-content);
+						align-items: map-get($display-center,align-items);
+    					width: 100%;
+    					margin: 8px 0;
+					    
+					    	 img{
+					    	 	height: auto;
+					    	 	border-radius:16px; 
+							    background-size:  cover;
+							    padding: 8px;
+							    margin-top: 16px;
+							    margin-bottom: 16px;
+
+
+					    	 	}
+    					}
+    	.contenedor-f{
+    		display: map-get($display-center,display);
+			justify-content: map-get($display-center,justify-content);
+			align-items: map-get($display-center,align-items);
+    		margin: 8px;
+        	color: $blanco;
+        	height: auto;
+    		.contenedor-texto-f{
+    			font-family: $nunito;
+
+
+    			.titulo-f{
+    						display: map-get($display-center,display);
+						    justify-content: map-get($display-center,justify-content);
+						    align-items:flex-start;
+						    flex-direction: column;}
+						    flex-wrap: wrap;
+						    
+						    h4{
+						    	font-size: $caption;
+						    	font-weight: 200;
+						    	margin: 8px 0px;
+						    	text-align: center;
+						    	width: 100%;
+						    	font-weight: 400px;
+
+						    	
+						    }
+						    h2{
+						    	margin: 8px 16px;
+						    	font-size: $h2;
+						    	font-weight: 400;
+						    }
+    			.quiene-somos{
+    			margin: 8px 16px;	
+    			flex-wrap: wrap; 
+                font-family: $nunito;
+                font-size: 1.5rem;
+                font-weight: 200;
+    			}
+    		}
+    	}
+    }
+//STAFF-CCL//
+    .staff-equipo{
+	flex-direction: column;
+    height: auto;
+    background-color: #fff;
+    margin: 0;
+    
+	.area-staff{
+		display: map-get($display-center,display);
+		justify-content: map-get($display-center,justify-content);
+		align-items: map-get($display-center,align-items);
+		width: 100%;
+    	flex-wrap: wrap;
+		.card-staf{
+			display: map-get($display-center,display);
+			justify-content: map-get($display-center,justify-content);
+			align-items: map-get($display-center,align-items);
+			width: 100%;
+			flex-direction: column;
+			box-shadow:$box-shadows;
+			height: auto;
+			margin:16px;
+			border-radius:$radius;
+
+			.img-staff{
+			isplay: map-get($display-center,display);
+			justify-content: map-get($display-center,justify-content);
+			align-items: map-get($display-center,align-items);
+    		width: 100%;
+    		padding: 8px;
+				img{
+					display: map-get($display-center,display);
+					justify-content: map-get($display-center,justify-content);
+					align-items: map-get($display-center,align-items);
+				    width: 100%;
+				    height: auto;
+				    border-top-left-radius: 8px;
+				    border-top-left-radius: 8px;
+							}
+						}
+			.textos-staff{
+				display: map-get($display-center,display);
+				justify-content: map-get($display-center,justify-content);
+				align-items: map-get($display-center,align-items);
+				flex-direction: column;
+				font-family: $nunito;
+				padding: 8px;
+				.titulo-staff{
+					 text-align: center;
+					 font-size: $h4;
+					 color:$mivioleta;
+					 margin:0;
+					 padding: 8px;
+					 font-weight: 200;
+
+						}
+				.bajada-staff{
+					font-size: 1.2rem;
+
+					}
+				}
+			}
+		}
+	}
+
+ }
+
+
+ @media  only screen and (min-width:769px) and (max-width:1023px){
+ 	/*fin de banner staff*/
+.banner-staff{
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    display: table;
+    overflow: hidden;
+    box-sizing: border-box;
+    }
+    .staff-staff{
+    	background-color: $mivioleta;
+    	width: 100%;
+    	margin: 0;
+    	width: 100%;
+    	h1{
+    		font-size: $titulos;
+    		font-family: $truculenta;
+    		color: $blanco;
+    	}
+    }
+//FUNDADOR-CARD//
+    .fundador{
+    	border-radius: 16px;
+    	box-shadows: $shadows;
+    	height: auto;
+    	background: $mivioleta;
+    	
+    	.img-fundador{
+    					display: map-get($display-center,display);
+    					align-items: map-get($display-center,align-items);
+					    
+					    	 img{
+					    	 	height: 426px;
+					    	 	border-top-left-radius:16px; 
+							    border-bottom-left-radius: 16px ;
+							    background-size:  cover;
+
+					    	 	}
+    					}
+    	.contenedor-f{
+    		display: map-get($display-center,display);
+    		align-items: map-get($display-center,align-items);
+    		justify-content: flex-end;
+    		margin-left: 24px;
+    		margin-right:48px;
+        	color: $blanco;
+        	height: auto;
+    		.contenedor-texto-f{
+    			font-family: $nunito;
+
+
+    			.titulo-f{
+    						display: map-get($display-center,display);
+						    justify-content: map-get($display-center,justify-content);
+						    align-items:flex-start;
+						    flex-direction: column;}
+						    flex-wrap: wrap;
+						    
+						    h4{
+						    	font-size: $h4;
+						    	font-weight: 200;
+						    	margin: 8px 16px;
+						    }
+						    h2{
+						    	margin: 8px 16px;
+						    	font-size: $h2;
+						    	font-weight: 400;
+						    }
+    			.quiene-somos{
+    			margin: 8px 16px;	
+    			flex-wrap: wrap; 
+                font-family: $nunito;
+                font-size: 1.5rem;
+                font-weight: 200;
+    			}
+    		}
+    	}
+    }
+ //STAFF-EQUIPO//
+    .staff-equipo{
+	flex-direction: row;
+    height: auto;
+    background-color: #fff;
+    margin: 24px;
+    
+	.area-staff{
+		display: map-get($display-center,display);
+		
+		align-items: map-get($display-center,align-items);
+		width: 100%;
+    	flex-wrap: wrap;
+		.card-staf{
+			display: map-get($display-center,display);
+			justify-content: map-get($display-center,justify-content);
+			align-items: map-get($display-center,align-items);
+			width: 320px;
+			flex-direction: column;
+			box-shadow:$box-shadows;
+			height: 595px;
+			margin:20px;
+			border-radius:$radius;
+
+			.img-staff{
+			isplay: map-get($display-center,display);
+			justify-content: map-get($display-center,justify-content);
+			align-items: map-get($display-center,align-items);
+    		width: 100%;
+    		padding: 8px;
+				img{
+					display: map-get($display-center,display);
+					justify-content: map-get($display-center,justify-content);
+					align-items: map-get($display-center,align-items);
+				    width: 100%;
+				    height: auto;
+				    border-top-left-radius: 8px;
+				    border-top-left-radius: 8px;
+				}
+			}
+			.textos-staff{
+				display: map-get($display-center,display);
+				justify-content: map-get($display-center,justify-content);
+				align-items: map-get($display-center,align-items);
+				flex-direction: column;
+				font-family: $nunito;
+				padding: 8px;
+				.titulo-staff{
+					 text-align: center;
+					 font-size: $h4;
+					 color:$mivioleta;
+					 margin:0;
+					 padding: 8px;
+					 font-weight: 200;
+					 font-weight: 400px;
+
+				}
+				.bajada-staff{
+					font-size: 1.2rem;
+
+				}
+			}
+		}
+	}
+}
+
+.parallax {
+  background-image: url("../assets/img/textura2.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+
+
+ }

@@ -1,0 +1,281 @@
+
+
+
+form{
+	margin: auto;
+    max-width: 1000px;
+    padding: 32px;
+    margin-top: 24px;
+    border-radius: 16px;
+    box-shadow:$box-shadows;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+
+    h2{
+    	font-family: $nunito;
+    	font-size: $h3;
+    	color:$mirosa;
+
+    }
+    .intro-f{
+    	text-align: left;
+    	margin-bottom: 40px;
+    	font-size: $bajada;
+    	font-family: $nunito;
+    	color:$mivioleta;
+    }
+    .row{
+    	.columna{
+    		label{
+    					font-size: 16px;
+					    color:$mivioleta;
+					    width: 100%;
+					    border:none;
+					    border-bottom: 1px solid #FF3366;
+					    outline: none;
+					    padding: 16px;
+    			input{
+    					width: 100%;
+					    border:none;
+					    outline: none;
+					    padding: 16px;
+    				
+    			}
+
+    			}
+    			textarea{
+    					min-height: 140px;
+					    max-height: 200px;
+					    max-width: 100%;
+					    margin-bottom: 16px;
+					    font-size: 16px;
+					    color:$mivioleta;
+					    width: 100%;
+					    border:none;
+					    border-bottom: 1px solid #FF3366;
+					    outline: none;
+					    padding: 16px;
+    					
+    				}
+
+
+    			#boton{
+    				background: rgba(147, 70, 150, 1);
+				    border-radius:16px;
+				    color:$blanco;
+				    cursor: pointer;
+				    font-size: 16px;
+				    width: 100%;
+				    padding: 16px;
+				    border:none;
+				    margin-top: 100px;
+				    -webkit-transition: all .3s ease;
+				    -moz-transition: all .3s ease;
+				    -o-transition: all .3s ease;
+				    transition: all .3s ease;
+				    &:hover{
+				    	cursor: pointer;
+    					background: #663399;
+				    }
+
+    			}
+    	}
+
+    	.column{
+			.info-f{
+			 text-align: justify-all;
+			 font-family: $nunito;
+			 font-size: $texto;
+			}
+	    }
+	}
+
+
+	}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+form{
+	margin: auto;
+    max-width: 1000px;
+    padding: 32px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    border-radius: 16px;
+    box-shadow:$box-shadows;
+    box-sizing: border-box;
+
+    h2{
+    	font-family: $nunito;
+    	font-size: $h3;
+    	color:$mirosa;
+
+    }
+    .intro-f{
+    	text-align: left;
+    	margin-bottom: 40px;
+    	font-size: $bajada;
+    	font-family: $nunito;
+    	color:$mivioleta;
+    }
+    .row{
+    	.columna{
+    		label{
+    					font-size: 16px;
+					    color:$mivioleta;
+					    width: 100%;
+					    border:none;
+					    border-bottom: 1px solid #FF3366;
+					    outline: none;
+					    padding: 16px;
+    			input{
+    					width: 100%;
+					    border:none;
+					    outline: none;
+					    padding: 16px;
+    				
+    			}
+
+    			}
+    			textarea{
+    					min-height: 140px;
+					    max-height: 200px;
+					    max-width: 100%;
+					    margin-bottom: 16px;
+					    font-size: 16px;
+					    color:$mivioleta;
+					    width: 100%;
+					    border:none;
+					    border-bottom: 1px solid #FF3366;
+					    outline: none;
+					    padding: 16px;
+    					
+    				}
+
+
+    			#boton{
+    				background: rgba(147, 70, 150, 1);
+				    border-radius:16px;
+				    color:$blanco;
+				    cursor: pointer;
+				    font-size: 16px;
+				    width: 100%;
+				    padding: 16px;
+				    border:none;
+				    margin-top: 100px;
+				    -webkit-transition: all .3s ease;
+				    -moz-transition: all .3s ease;
+				    -o-transition: all .3s ease;
+				    transition: all .3s ease;
+				    &:hover{
+				    	cursor: pointer;
+    					background: #663399;
+				    }
+
+    			}
+    	}
+    }
+}
+
+.column{
+	.info-f{
+		 text-align: justify-all;
+		 font-family: $nunito;
+		 font-size: $texto;
+	}
+}
+
+}
+
+
+ @media  only screen and (min-width:769px) and (max-width:1023px){
+form{
+	margin: auto;
+    max-width: 1000px;
+    padding: 32px;
+    margin-top: 24px;
+    border-radius: 16px;
+    box-shadow:$box-shadows;
+    box-sizing: border-box;
+
+    h2{
+    	font-family: $nunito;
+    	font-size: $h3;
+    	color:$mirosa;
+
+    }
+    .intro-f{
+    	text-align: left;
+    	margin-bottom: 40px;
+    	font-size: $bajada;
+    	font-family: $nunito;
+    	color:$mivioleta;
+    }
+    .row{
+    	.columna{
+    		label{
+    					font-size: 16px;
+					    color:$mivioleta;
+					    width: 100%;
+					    border:none;
+					    border-bottom: 1px solid #FF3366;
+					    outline: none;
+					    padding: 16px;
+    			input{
+    					width: 100%;
+					    border:none;
+					    outline: none;
+					    padding: 16px;
+    				
+    			}
+
+    			}
+    			textarea{
+    					min-height: 140px;
+					    max-height: 200px;
+					    max-width: 100%;
+					    margin-bottom: 16px;
+					    font-size: 16px;
+					    color:$mivioleta;
+					    width: 100%;
+					    border:none;
+					    border-bottom: 1px solid #FF3366;
+					    outline: none;
+					    padding: 16px;
+    					
+    				}
+
+
+    			#boton{
+    				background: rgba(147, 70, 150, 1);
+				    border-radius:16px;
+				    color:$blanco;
+				    cursor: pointer;
+				    font-size: 16px;
+				    width: 100%;
+				    padding: 16px;
+				    border:none;
+				    margin-top: 100px;
+				    -webkit-transition: all .3s ease;
+				    -moz-transition: all .3s ease;
+				    -o-transition: all .3s ease;
+				    transition: all .3s ease;
+				    &:hover{
+				    	cursor: pointer;
+    					background: #663399;
+				    }
+
+    			}
+    	}
+    }
+}
+
+.column{
+	.info-f{
+		 text-align: justify-all;
+		 font-family: $nunito;
+		 font-size: $texto;
+	}
+}
+ }

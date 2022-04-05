@@ -1,0 +1,881 @@
+
+ 
+
+/*banner-area*/
+.banner{
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    background-image:url(../assets/img/banner-home.jpg);
+    background-size: 120%;
+    animation: movimiento  10s infinite linear alternate;
+    background-repeat: no-repeat;
+
+        @keyframes movimiento{
+
+            fron{
+                background-position: bottom left;
+                background-position: top left;
+            } 
+            to{
+                background-position: top right;
+            }
+            
+            }
+
+         .container-banner{
+
+            .container-tex{
+                max-width: 1200px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                    .tex{
+                        width: 100%;
+                        max-width: 800px;
+                        position: relative;
+                        color: #fff;
+                        margin: 0;
+                       
+                        
+                        .tex-banner{
+                            color:$blanco;
+                            font-family: $nunito;
+                            font-size: $h2;
+                            font-weight: 500;
+                            margin: 8px;
+                        }
+
+                        .bajada-banner{
+                            font-size: $h3;
+                            color:$blanco;
+                            font-family: $nunito;
+                            font-weight: 200;
+                        }
+                        
+                        
+                 button{
+                    background:$mivioleta;
+                    transition: all .3s ease;
+                    padding: 16px 100px;
+                    margin-left: 8px;
+                    font-size: 16px;
+                    border-style: none;
+                    margin-top:16px;
+                    cursor: pointer;
+                    -webkit-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    border-radius: 50px;
+                    color:$blanco;
+                    &:hover{
+                    background: #FF3366;}
+                    
+                    .a { 
+                        text-decoration: none;
+                        color: $blanco;}
+                   
+                     }
+                }   
+
+            }
+
+         }
+
+    }
+
+//sección quienes somos//
+
+ .quienes{
+    display: map-get($display-center,display);
+    justify-content: map-get($display-center,justify-content);
+    align-items: map-get($display-center,align-items);
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: $radius;
+    box-shadow:$shadows;
+    padding: 16px;
+        h1{
+            display: map-get($display-center,display);
+            justify-content: map-get($display-center,justify-content);
+            align-items: map-get($display-center,align-items);
+            flex-wrap: wrap;
+            font-size: $titulos;
+            font-family: $nunito;
+            font-weight: 200;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            
+        }
+
+         p.quiene-somos{
+                display: map-get($display-center,display);
+                justify-content: map-get($display-center,justify-content);
+                align-items: map-get($display-center,align-items);
+                flex-wrap: wrap; 
+                font-family: $nunito;
+                font-size: 1.5rem;
+                font-weight: 200;
+                
+             }
+ }  
+
+ //sección que ofrecemos//
+
+ .contenedor-ofrecemos{
+    display: map-get($display-center,display);
+    justify-content: map-get($display-center,justify-content);
+    align-items: map-get($display-center,align-items);
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    .sub-titulos{
+        font-family: $nunito;
+        font-size: $sub-titulos;
+        display: map-get($display-center,display);
+        justify-content: map-get($display-center,justify-content);
+        align-items: map-get($display-center,align-items);
+        color:$mirosa;
+        width: 100%;
+       font-weight: 200;
+            }
+    .contenedor-card-2{
+        display: map-get($display-center,display);
+        align-items: map-get($display-center,align-items);
+        justify-content:space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        .contenedor-card{
+            display: map-get($display-center,display);
+            justify-content: map-get($display-center,justify-content);
+            align-items: map-get($display-center,align-items);
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 265px;
+            border-radius: 8px;
+            box-shadow:$shadows;
+            transition: 0.2s;
+            margin: 8px;
+            height: auto;
+            padding: 8px; 
+            &:hover{
+                background-color:#DFD2EC;
+                color:$blanco;
+                width: 270px;
+            }     
+        
+        .iconos-personalizados{
+             display: map-get($display-center,display);
+            justify-content: map-get($display-center,justify-content);
+            align-items: map-get($display-center,align-items);
+            margin: 0;
+            img{
+                padding-bottom: 8px;
+                padding-top:  8px;
+
+            }
+        }
+        .bajada-card-ofrecemos h4{
+           display: map-get($display-center,display);
+           justify-content: map-get($display-center,justify-content);
+           align-items: map-get($display-center,align-items);
+           font-family: $nunito;
+           font-weight: 400;
+           font-size: 1.7rem;
+           color: $mirosa; 
+           text-align: center;
+           padding: 0;
+           margin: 0;
+
+        }
+         p.bajada{
+                display: map-get($display-center,display);
+               justify-content: map-get($display-center,justify-content);
+               align-items: map-get($display-center,align-items);
+                font-size: 1.2rem;
+                text-align: center;
+                font-family: $nunito;
+                padding: 0;
+                margin: 0;
+                }
+        }
+    }
+ }    
+
+ /*/seccion testimoni0s/*/
+ .testimonios{
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    align-content: center;
+
+    h2.sub-titulos{
+        flex-direction:column; 
+        font-family: $nunito;
+        font-size: $sub-titulos;
+        display: map-get($display-center,display);
+        justify-content: map-get($display-center,justify-content);
+        align-items: map-get($display-center,align-items);
+        color:$mirosa;
+        width: 100%;
+       font-weight: 200;
+       padding: 8px;
+            }
+        .contenedor-tes{
+            display: map-get($display-center,display);
+            align-items: map-get($display-center,align-items);
+            justify-content: space-between;
+            flex-direction:row;
+            flex-wrap: wrap;
+            width: 100%;
+            .contenedor-testimonio{
+                display: map-get($display-center,display);
+                align-items: map-get($display-center,align-items);
+                justify-content: flex-start;
+                width: 355px;
+                background-color: $mivioleta;
+                border-radius: 16px;
+                transition: all 500ms ease;
+                margin: 16px 16px;
+                font-family: $nunito;
+                color: $blanco;
+                flex-direction: column;
+                height: 660px;
+                box-shadow:$shadows;
+                &:hover{
+                        transform: scale(1.1);
+                        background-color:#FF3366
+                }
+                .alumnos img{
+                     width: 355px;
+                    height: auto;
+                    border-top-left-radius: 16px;
+                    border-top-right-radius: 16px;
+                        }
+                .textos-alumnos{
+                display: map-get($display-center,display);
+                align-items: map-get($display-center,align-items);
+                justify-content: map-get($display-center,justify-content);
+                flex-direction: column;
+                padding: 8px;
+                text-align: center;
+
+                    .n-alumnos{
+                        font-size: $h3;
+                        margin: 8px;
+                        font-weight: 400;
+
+                        }
+                        .testi{
+                        border-bottom: 1px solid $blanco;
+                        width: 100%;
+                        }
+
+                    .testimonio1{
+                        font-size: $bajada;
+                        font-weight: 200;
+
+                        }
+                
+                 }
+        }
+    }
+ }
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+
+    .banner{
+        width: 100%;
+        height: 400px;
+        position: relative;
+        background-size: 200%;
+        animation: movimiento  10s infinite linear alternate;
+        display: map-get($display-center,display);
+        justify-content: map-get($display-center,justify-content);
+        align-items: map-get($display-center,align-items);
+        flex-wrap: wrap;
+        margin: 0;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        .container-banner{
+            display: map-get($display-center,display);
+            justify-content: map-get($display-center,justify-content);
+            align-items: map-get($display-center,align-items);
+            flex-direction: column;
+            margin: 0px;
+            flex-wrap: wrap;
+            overflow: hidden;
+            .container-tex{
+                max-width: 1200px;
+                position: relative;
+                display: map-get($display-center,display);
+                justify-content: map-get($display-center,justify-content);
+                align-items: map-get($display-center,align-items);
+                margin: 0px;
+                overflow-x: hidden;
+                padding: 2px;
+                .tex{
+                     display: map-get($display-center,display);
+                     justify-content: map-get($display-center,justify-content);
+                     align-items: map-get($display-center,align-items);
+                     flex-direction: column;
+                     position: relative;
+                     color: #fff;
+                     margin-bottom: 8px 0;
+                     flex-wrap: wrap;
+                     padding: 0;
+                     overflow-x: hidden;
+                     .tex-banner{
+                            display: map-get($display-center,display);
+                            justify-content: map-get($display-center,justify-content);
+                            align-items: map-get($display-center,align-items);
+                            flex-direction: column;
+                            color:$blanco;
+                            font-family: $nunito;
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            margin: 0px;
+                            flex-wrap: wrap;
+                            position: relative;
+                            padding: 2px;
+                            text-align: center;
+                            
+                                    }
+                    .bajada-banner{
+                            display: map-get($display-center,display);
+                            justify-content: map-get($display-center,justify-content);
+                            align-items: map-get($display-center,align-items);
+                            flex-direction: column;
+                            color:$blanco;
+                            font-family: $nunito;
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            margin: 0px;
+                            flex-wrap: wrap;
+                            position: relative;
+                            padding: 2px;
+                            text-align: center;
+                        }
+                                            
+
+                      
+                         button{
+                            display: map-get($display-center,display);
+                            justify-content: map-get($display-center,justify-content);
+                            align-items: map-get($display-center,align-items);
+                            text-align: center;
+                            flex-direction: column;
+                            background:$mivioleta;
+                            transition: all .3s ease;
+                            padding: 16px 70px;
+                            font-size: 16px;
+                            border-style: none;
+                            cursor: pointer;
+                            -webkit-transition: all .3s ease;
+                            -moz-transition: all .3s ease;
+                            -o-transition: all .3s ease;
+                            border-radius: 50px;
+                            color:$blanco;
+                            &:hover{
+                            background: #FF3366;}
+                            
+                            .a { 
+                                text-decoration: none;
+                                color: $blanco;}
+                                 
+                                }                          
+
+                            }
+
+
+                    }
+
+
+
+                }
+
+
+        }
+
+    //*SECCION QUIENES SOMOS*//
+ .quienes{
+    display: map-get($display-center,display);
+    justify-content: map-get($display-center,justify-content);
+    align-items: map-get($display-center,align-items);
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: $radius;
+    box-shadow:$shadows;
+    margin:16px;
+    padding: 8px;
+        h1{
+            display: map-get($display-center,display);
+            justify-content: map-get($display-center,justify-content);
+            align-items: map-get($display-center,align-items);
+            flex-wrap: wrap;
+            font-size: 2rem;
+            font-family: $nunito;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            padding: 8px;
+            
+            }
+
+         p.quiene-somos{
+                display: map-get($display-center,display);
+                justify-content: map-get($display-center,justify-content);
+                align-items: map-get($display-center,align-items);
+                flex-wrap: wrap; 
+                font-family: $nunito;
+                font-size: 1.5rem;
+                font-weight: 200;
+                flex-wrap: wrap;
+                padding: 8px;
+                 }
+        }  
+//*sección que ofrecemos*//
+
+ .contenedor-ofrecemos{ 
+    display: map-get($display-center,display);
+    justify-content: map-get($display-center,justify-content);
+    align-items: map-get($display-center,align-items);
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 16px 0;
+    .sub-titulos{
+        font-family: $nunito;
+        font-size: $sub-titulos;
+        display: map-get($display-center,display);
+        justify-content: map-get($display-center,justify-content);
+        align-items: map-get($display-center,align-items);
+        color:$mirosa;
+        width: 100%;
+       font-weight: 200;
+       text-align: center;
+            }
+    .contenedor-card-2{
+        display: map-get($display-center,display);
+        align-items: map-get($display-center,align-items);
+        justify-content: map-get($display-center,justify-content);
+        flex-wrap: wrap;
+        min-width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        .contenedor-card{
+            display: map-get($display-center,display);
+            justify-content: map-get($display-center,justify-content);
+            align-items: map-get($display-center,align-items);
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 300px;
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow:0 0 10px 0 #cacaca;
+            transition: 0.2s;
+            margin:8px; 
+            &:hover{
+                background-color:#DFD2EC;
+                color:$blanco;
+                width: 320px;
+                }     
+        
+        .iconos-personalizados{
+            display: map-get($display-center,display);
+            justify-content: map-get($display-center,justify-content);
+            align-items: map-get($display-center,align-items);
+            img{     }
+        }
+        .bajada-card-ofrecemos{
+
+             h4{
+               display: map-get($display-center,display);
+               justify-content: map-get($display-center,justify-content);
+               align-items: map-get($display-center,align-items);
+               font-family: $nunito;
+                font-size: 1.5rem;
+                font-weight: 200;
+                text-align: center;
+               color: $mirosa; 
+               text-align: center;
+
+                                }
+             p.bajada{
+                    display: map-get($display-center,display);
+                   justify-content: map-get($display-center,justify-content);
+                   align-items: map-get($display-center,align-items);
+                    font-size: 1.2rem;
+                    text-align: center;
+                    font-family: $nunito;
+                        }
+                }
+     
+            }
+
+        } 
+    } 
+     //seccion testimonios//
+ .testimonios{
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: map-get($display-center,display);
+    justify-content: map-get($display-center,justify-content);
+    align-items: map-get($display-center,align-items);
+    width: 100%;
+    margin: 0;
+
+    overflow-x: none;
+
+    h2.sub-titulos{
+        flex-direction:column; 
+        font-family: $nunito;
+        font-size:$sub-titulos;
+        display: map-get($display-center,display);
+        justify-content: map-get($display-center,justify-content);
+        align-items: map-get($display-center,align-items);
+        color:$mirosa;
+        text-align: center;
+        font-weight: 200;
+       flex-wrap: wrap
+            }
+        .contenedor-tes{
+            display: map-get($display-center,display);
+            align-items: map-get($display-center,align-items);
+            justify-content: map-get($display-center,justify-content);
+            flex-direction:column;
+            width: 100%;
+            
+            .contenedor-testimonio{
+                display: map-get($display-center,display);
+                align-items: map-get($display-center,align-items);
+                justify-content: map-get($display-center,justify-content);
+                width: 280px;
+                background-color: $mivioleta;
+                border-radius: 16px;
+                transition: all 500ms ease;
+                margin: 24px 8px;
+                font-family: $nunito;
+                color: $blanco;
+                flex-direction: column;
+                height: auto;
+                &:hover{
+                        transform: scale(1.1);
+                        background-color:#FF3366
+                }
+                .alumnos img{
+                     width: 280px;
+                    height: auto;
+                    border-top-left-radius: none;
+                    border-top-right-radius: none;
+
+                }
+                .textos-alumnos{
+                display: map-get($display-center,display);
+                align-items: map-get($display-center,align-items);
+                justify-content: map-get($display-center,justify-content);
+                flex-direction: column;
+                padding: 8px;
+                text-align: center;
+
+                
+                    .n-alumnos{
+                        font-size: $h4;
+                        margin: 8px;
+                        font-weight: 200;
+                    }
+                   hr.testi{
+                        border-bottom: 1px solid $blanco;
+                        width: 100%;
+                        }
+
+                    .testimonio1{
+                        font-size: $texto;
+                        font-weight: 200;
+                        }
+                }
+            }
+        }
+    }    
+
+
+}
+
+
+
+@media  only screen and (min-width:769px) and (max-width:1023px){
+ 
+.banner{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    background-image:url(../assets/img/banner-home.jpg);
+    background-size: 115%;
+    animation: movimiento  10s infinite linear alternate;
+    background-repeat: no-reapeat;
+
+        @keyframes movimiento{
+
+            fron{
+                background-position: bottom left;
+                background-position: top left;
+            } 
+            to{
+                background-position: top right;
+            }
+            
+            }
+
+         .container-banner{
+
+            .container-tex{
+                width: 100%;
+                max-width: 1200px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                    .tex{
+                        width: 100%;
+                        max-width: 800px;
+                        position: relative;
+                        color: #fff;
+                        margin-bottom: 8px 0;
+                        
+                        .tex-banner{
+                            color:$blanco;
+                            font-family: $nunito;
+                            font-size: $sub-titulos;
+                            padding: 8px;
+                            font-weight: 500;
+                            margin: auto;
+                        }
+
+                        .bajada-banner{
+                            font-size: 2.5rem;
+                            color:$blanco;
+                            padding: 8px 0;
+                            font-family: $nunito;
+                            font-weight: 200;
+                        }
+                        
+                        }
+                 button{
+                    background:$mivioleta;
+                    transition: all .3s ease;
+                    padding: 16px 100px;
+                    margin-left: 8px;
+                    font-size: 16px;
+                    border-style: none;
+                    margin-top:16px;
+                    cursor: pointer;
+                    -webkit-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    border-radius: 50px;
+                    color:$blanco;
+                    &:hover{
+                    background: #FF3366;}
+                    
+                    .a { 
+                        text-decoration: none;
+                        color: $blanco;}
+                   
+                        }
+            }   
+
+        }
+    }
+//sección quienes somos//
+
+ .quienes{
+    display: map-get($display-center,display);
+    justify-content: map-get($display-center,justify-content);
+    align-items: map-get($display-center,align-items);
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: $radius;
+    box-shadow:$shadows;
+    padding: 16px;
+        h1{
+            display: map-get($display-center,display);
+            justify-content: map-get($display-center,justify-content);
+            align-items: map-get($display-center,align-items);
+            flex-wrap: wrap;
+            font-size: $titulos;
+            font-family: $nunito;
+            font-weight: 200;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            
+        }
+
+         p.quiene-somos{
+                display: map-get($display-center,display);
+                justify-content: map-get($display-center,justify-content);
+                align-items: map-get($display-center,align-items);
+                flex-wrap: wrap; 
+                font-family: $nunito;
+                font-size: 1.5rem;
+                font-weight: 200;
+                flex-wrap: wrap;
+                    }
+        } 
+
+    //sección que ofrecemos//
+
+ .contenedor-ofrecemos{
+    display: map-get($display-center,display);
+    justify-content: map-get($display-center,justify-content);
+    align-items: map-get($display-center,align-items);
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    .sub-titulos{
+        font-family: $nunito;
+        font-size: $sub-titulos;
+        display: map-get($display-center,display);
+        justify-content: map-get($display-center,justify-content);
+        align-items: map-get($display-center,align-items);
+        color:$mirosa;
+        width: 100%;
+       font-weight: 200;
+    }
+    .contenedor-card-2{
+        display: map-get($display-center,display);
+        align-items: map-get($display-center,align-items);
+        justify-content:space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        .contenedor-card{
+            display: map-get($display-center,display);
+            justify-content: map-get($display-center,justify-content);
+            align-items: map-get($display-center,align-items);
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 265px;
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow:$shadows;
+            transition: 0.2s;
+            margin: 8px; 
+            &:hover{
+                background-color:#DFD2EC;
+                color:$blanco;
+                width: 270px;
+            }     
+       
+        .iconos-personalizados{
+             display: map-get($display-center,display);
+            justify-content: map-get($display-center,justify-content);
+            align-items: map-get($display-center,align-items);
+            img{   }
+        }
+        .bajada-card-ofrecemos h4{
+           display: map-get($display-center,display);
+           justify-content: map-get($display-center,justify-content);
+           align-items: map-get($display-center,align-items);
+           font-family: $nunito;
+           font-weight: 400;
+           font-size: 1.7rem;
+           color: $mirosa; 
+           text-align: center;
+
+        }
+         p.bajada{
+                display: map-get($display-center,display);
+               justify-content: map-get($display-center,justify-content);
+               align-items: map-get($display-center,align-items);
+                font-size: 1.2rem;
+                text-align: center;
+                font-family: $nunito;
+
+                }
+            }     
+        }
+    }
+
+     //seccion testimonis//
+ .testimonios{
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px 0;
+
+    h2.sub-titulos{
+        flex-direction:column; 
+        font-family: $nunito;
+        font-size: $sub-titulos;
+        display: map-get($display-center,display);
+        justify-content: map-get($display-center,justify-content);
+        align-items: map-get($display-center,align-items);
+        color:$mirosa;
+        width: 100%;
+       font-weight: 200;
+            }
+        .contenedor-tes{
+            display: map-get($display-center,display);
+            align-items: map-get($display-center,align-items);
+            justify-content: space-between;
+            flex-direction:row;
+            width: 100%;
+            .contenedor-testimonio{
+                display: map-get($display-center,display);
+                align-items: map-get($display-center,align-items);
+                justify-content: map-get($display-center,justify-content);
+                width: 355px;
+                background-color: $mivioleta;
+                border-radius: 16px;
+                transition: all 500ms ease;
+                margin: 16px 0px;
+                font-family: $nunito;
+                color: $blanco;
+                flex-direction: column;
+                 height: 660px; 
+                &:hover{
+                        transform: scale(1.1);
+                        background-color:$mirosa;
+                        }
+                .alumnos img{
+                     width: 355px;
+                    height: auto;
+                    border-top-left-radius: 16px;
+                    border-top-right-radius: 16px;
+
+                        }
+                .textos-alumnos{
+                display: map-get($display-center,display);
+                align-items: map-get($display-center,align-items);
+                justify-content: map-get($display-center,justify-content);
+                flex-direction: column;
+                padding: 8px;
+                text-align: center;
+
+                    .n-alumnos{
+                        font-size: $h3;
+                        margin: 8px;
+                        font-weight: 200;
+
+                        }
+                    .testimonio1{
+                        font-size: $bajada;
+                        font-weight: 200;
+                
+                        }
+                
+                    }
+                }     
+
+            }
+        }
+    
+
+}    

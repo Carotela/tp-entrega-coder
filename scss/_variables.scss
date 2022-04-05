@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700 &family=Truculenta:wght@200;400;600&display=swap');
+//tipografias//
+$nunito:'Nunito', sans-serif;
+$truculenta:'Truculenta', sans-serif;
+$border-radius:8px;
+$box-shadows: 0px 0px 10px 0px #cacaca;
+//mis colores//
+$mivioleta:#673398;
+$mirosa:#FF3366;
+$blanco:#fff;
+$negro:#FF3366;
+
+//mapas//
+
+
+$display-center:(
+	display: flex,
+	justify-content: center,
+	align-items: center
+	);
+
+.center{
+display: map-get($display-center,display);
+justify-content: map-get($display-center,justify-content);
+align-items: map-get($display-center,align-items); }
+
+$fondoV:(
+	colorf:#673398,
+	ancho: 100%,
+	
+	 );
+
+.fondiado{
+	background-color: map-get($fondoV, colorf);
+	width: map-get($fondoV, ancho);
+	}
+
+$margenes-principal:(
+	top: 16px, 
+	bottom: 16px,
+	left: 48px,
+	right: 48px 
+	);
+
+.margenes{
+	margin-top: map-get($margenes-principal,top);
+	margin-bottom:  map-get($margenes-principal,bottom);
+	margin-left: map-get($margenes-principal,left);
+	margin-right: map-get($margenes-principal,right);
+}
+
+
+$titulos:4rem;
+$h2:3rem;
+$sub-titulos:2.5rem;
+$h3: 2.0rem;
+$h4:1.5rem;
+$caption:1.2rem;
+$bajada:1.3rem;
+$texto:1rem;
+$radius:8px;
+$shadows:0 0 10px 0 #cacaca;
+
+// MIXIN//
+@mixin color-background($color, $background){
+	color:$color;
+	background-color: $background;
+}
+
+.card-principal{
+	@include color-background($blanco,#673398);
+}

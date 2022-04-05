@@ -1,0 +1,200 @@
+
+.header{
+	display: map-get($display-center,display);
+	justify-content: map-get($display-center,justify-content);
+	align-items: map-get($display-center,align-items);
+	flex-wrap:wrap;
+	height: auto;
+	 
+	nav.fondiado{
+		display: map-get($display-center,display);
+		align-items: map-get($display-center,align-items); 
+		justify-content: space-between;
+		margin-right: 32px;
+		
+
+
+		.logo-enlace{
+			.logo{
+			width: 100px;
+			height: 100px;}
+		}
+		.enlaces-menu{
+			display: map-get($display-center,display);
+			align-items: map-get($display-center,align-items); 
+			justify-content: space-between;
+			margin-right: 32px;
+			padding: 16px;
+			color: $blanco;
+			text-decoration: none;
+
+				li{
+					display: map-get($display-center,display);
+					justify-content: map-get($display-center,justify-content);
+					align-items: map-get($display-center,align-items);
+					padding: 16px;
+					text-decoration: none;
+					 .idioma{
+					 	background: $mivioleta;
+					 	color:$mivioleta;
+					 	border-radius:8px;
+					 	cursor: pointer;
+					    font-size: 14px;
+					    width: 100%;
+					    padding: 8px;
+					    border:1px solid $blanco;
+					     -webkit-transition: all .3s ease;
+					    -moz-transition: all .3s ease;
+					    -o-transition: all .3s ease;
+					    transition: all .3s ease;
+					    &:hover{
+					    	background: $mirosa;
+					    	color: $blanco;
+
+					    }
+
+					    .btn-id{
+					    	color: $blanco;
+					    }
+										 }
+
+					a{
+						text-decoration: none;
+						color: $blanco;
+						font-family: $nunito;
+						font-size: 1rem;
+						font-weight: 400;
+
+						&:hover{
+								color:$mirosa;
+	    						
+					}			}
+				}
+		}
+	}
+}  
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+
+.header{
+	width: 100%;
+	height: auto;
+	display: map-get($display-center,display);
+	align-items: map-get($display-center,align-items); 
+	flex-wrap:wrap;
+	flex-direction: column;
+	margin: 0;
+
+	
+	nav.fondiado{
+		flex-wrap:wrap;
+		height: auto;
+		width: 100%;
+		display: map-get($display-center,display);
+		justify-content: map-get($display-center,justify-content);
+		align-items: map-get($display-center,align-items); 
+		flex-direction: column;
+		flex-wrap:wrap;
+		
+
+		.logo-enlace{
+			.logo{
+			width: 100px;
+			height: 100px;
+			padding: 8px;
+			display: map-get($display-center,display);
+			align-items: map-get($display-center,align-items); 
+			justify-content:center;
+
+				}
+		}
+		.enlaces-menu{
+			display: map-get($display-center,display);
+			align-items: map-get($display-center,align-items); 
+			justify-content: center;
+			padding: 8px;
+			width: 100%;
+			margin: 0;
+			flex-direction: column;
+			flex-wrap:wrap;
+		
+
+
+				li{
+					display: map-get($display-center,display);
+					justify-content: map-get($display-center,justify-content);
+					align-items: map-get($display-center,align-items);
+					padding: 8px;
+					text-decoration: none;
+					flex-wrap:wrap;
+					flex-direcion: column;
+
+					a{
+						font-size: 1rem;
+						&:hover{
+								color:$mirosa;
+	    						
+					}			}
+				}
+		}
+	}
+}  
+
+}
+
+ @media  only screen and (min-width:769px) and (max-width:1023px){
+
+ 	.header{
+	display: map-get($display-center,display);
+	justify-content: map-get($display-center,justify-content);
+	align-items: map-get($display-center,align-items);
+	flex-wrap:wrap; 
+	flex-direction:column;
+	nav.fondiado{
+		display: map-get($display-center,display);
+		align-items: map-get($display-center,align-items); 
+		justify-content: space-between;
+		margin-right: 32px;
+		padding: 16px;
+		flex-wrap:wrap;
+		flex-direction:column; 
+		.logo-enlace{
+			.logo{
+			width: 100px;
+			height: 100px;}
+		}
+		.enlaces-menu{
+			display: map-get($display-center,display);
+			align-items: map-get($display-center,align-items); 
+			justify-content: space-between;
+			margin-right: 32px;
+			padding: 16px;
+			color: $blanco;
+			text-decoration: none;
+			flex-wrap:wrap;
+		flex-direction:column;
+
+				li{
+					display: map-get($display-center,display);
+					justify-content: map-get($display-center,justify-content);
+					align-items: map-get($display-center,align-items);
+					padding: 16px;
+					text-decoration: none;
+
+					a{
+						text-decoration: none;
+						color: $blanco;
+						font-family: $nunito;
+						font-size: 1rem;
+						font-weight: 400;
+
+						&:hover{
+								color:$mirosa;
+	    						
+					}			}
+				}
+		}
+	}
+}  
+
+ }
